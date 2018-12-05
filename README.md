@@ -1,4 +1,4 @@
-# Grounded-transfer
+# Grounded-RL-Transfer
 
 This repository contains the code for our paper [Grounding Language for Transfer in Deep Reinforcement Learning](https://arxiv.org/abs/1708.00133), appearing in the Journal of Artificial Intelligence (JAIR).
 
