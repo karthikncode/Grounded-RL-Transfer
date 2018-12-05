@@ -12,7 +12,7 @@ Install some required Torch packages:
 
 #### Other requirements  
 Make sure to install [ZMQ](http://zeromq.org/intro:get-the-software) (`sudo apt-get install libzmq-dev`) and the java port of the library [jzmq](https://github.com/zeromq/jzmq) (this can also be done directly using Maven). 
-Also, make sure to set your `java.library.path` to the place containing the zmq and jzmq `.so` files (this is usually at `/usr/local/lib`). This code has been tested to work with Java 1.8.0_171.
+Also, make sure to set your `java.library.path` to the place containing the zmq and jzmq `.so` files (this is usually at `/usr/local/lib`). This code has been tested to work with Java 1.8.0_171. We have included pre-compiled Java classes for gvgai - if you wish to recompile the classes from scratch, you can use the `build.xml` file in `gvgai/`.
 
 ### Testing ZMQ (optional)
 
