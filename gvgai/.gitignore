@@ -2,5 +2,4 @@ classes/
 .idea/
 examples/.DS_Store
 *.MF
-*.class
 src/tools/.DS_Store
