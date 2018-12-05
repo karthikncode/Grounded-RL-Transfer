@@ -1,0 +1,16 @@
+211 moves horizontally and is an enemy
+211 red bat that must be avoided
+211 moves horizontally to the left and right
+211 this character moves from side to side and will kill the player if touched
+202 is a friend moving vertically
+202 red scorpion that moves up and down
+202 enemy that moves to the south
+202 this character slowly moves from the top of the screen to the bottom in a straight line
+207 is a bomber friend shooting upwards
+207 blue spider that can be collected by the player
+207 enemy that moves to the left that the player can make vanish
+207 this character moves somewhat quickly straight across the screen from right to left
+220 is an enemy shooting right
+220 bear fires projectiles to the right
+220 enemy that moves to the left horizontally and shoots balls to the right
+220 this character moves right to left firing shots back to the right

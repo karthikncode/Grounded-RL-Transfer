@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_gvgai" default="compile.module.gvgai">
+  <dirname property="module.gvgai.basedir" file="${ant.file.module_gvgai}"/>
+  
+  <property name="module.jdk.home.gvgai" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.gvgai" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.gvgai" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.gvgai" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="gvgai.output.dir" value="${module.gvgai.basedir}/out/production/gvgai"/>
+  <property name="gvgai.testoutput.dir" value="${module.gvgai.basedir}/out/test/gvgai"/>
+  
+  <path id="gvgai.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="gvgai.module.production.classpath"/>
+  
+  <path id="gvgai.runtime.production.module.classpath">
+    <pathelement location="${gvgai.output.dir}"/>
+  </path>
+  
+  <path id="gvgai.module.classpath">
+    <pathelement location="${gvgai.output.dir}"/>
+  </path>
+  
+  <path id="gvgai.runtime.module.classpath">
+    <pathelement location="${gvgai.testoutput.dir}"/>
+    <pathelement location="${gvgai.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.gvgai">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.gvgai">
+    <patternset refid="excluded.from.module.gvgai"/>
+  </patternset>
+  
+  
+  <target name="compile.module.gvgai" depends="compile.module.gvgai.production,compile.module.gvgai.tests" description="Compile module gvgai"/>
+  
+  <target name="compile.module.gvgai.production" depends="register.custom.compilers" description="Compile module gvgai; production classes"/>
+  
+  <target name="compile.module.gvgai.tests" depends="register.custom.compilers,compile.module.gvgai.production" description="compile module gvgai; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.gvgai" description="cleanup module">
+    <delete dir="${gvgai.output.dir}"/>
+    <delete dir="${gvgai.testoutput.dir}"/>
+  </target>
+</project>

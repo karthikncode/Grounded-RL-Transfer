@@ -1,0 +1,46 @@
+
+0 bomberman [u'icon0', u'a fairly slow moving enemy']
+[u'icon1', u'a fairly active moving enemy']
+[u'icon2', u'This is the player avatar']
+[u'icon3', u'This fires from bombs and will destroy anything it touches']
+
+1 boulderchase [u'icon0', u'Brown scorpion that slowly moves toward the player']
+[u'icon1', u'Red bat that slowly moves toward the player']
+[u'icon2', u'This is the player avatar']
+[u'icon3', u'Pickaxe that can be used to dig the earth']
+[u'icon4', u'The exit to the stage']
+[u'icon5', u'Diamonds the player can pick up.']
+[u'icon6', u'boulders that can be dropped on enemies or the player']
+
+2 freeway [u'icon0', u'Where the player needs to go to']
+[u'icon1', u'a vehicle that is red and fast going right']
+[u'icon2', u'a car that is tan going slow and to the right']
+[u'icon3', u'a fast moving red vehicle going left']
+[u'icon4', u'a tan car moving slowly to the left']
+[u'icon5', u'A tree that blocks the players path']
+[u'icon6', u'a girl in a green shirt that the player controls']
+
+3 f&e1 [u'icon0', u'black bat that moves to the right']
+[u'icon1', u'Stays still and can be collected']
+[u'icon2', u'brown scorpion that moves up']
+[u'icon3', u'Moves to the left and fires projectiles']
+
+4 f&e2 [u'icon0', u'red scorpion that moves up and down']
+[u'icon1', u'blue spider that can be collected by the player']
+[u'icon2', u'a bear that chases the player']
+[u'icon3', u'moves left and right and fires projectiles downward']
+
+5 f&e3 [u'icon0', u'Bear that can be collected by the player']
+[u'icon1', u'Archer that fires projectiles downward']
+[u'icon2', u'Has a dagger and must be avoided']
+[u'icon3', u'Archer that fires projectiles to the left']
+
+6 f&e4 [u'icon0', u'butterfly that must be collected to win']
+[u'icon1', u'fires projectiles to the left']
+[u'icon2', u'slowly moves back and forth']
+[u'icon3', u'bear fires projectiles to the right']
+
+7 f&e5 [u'icon0', u'black bug that can be collected by the player']
+[u'icon1', u'quiver that fires projectiles to the right']
+[u'icon2', u'red bat that must be avoided']
+[u'icon3', u'a bird that must be avoided']

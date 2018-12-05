@@ -1,0 +1,16 @@
+203 chases you but is friendly
+203 bear that can be collected by the player
+203 enemy that moves randomly follows the player quickly
+203 this character can move in any fashion necessary in order to follow the player avatar
+205 is a friend fleeing from you
+205 black bug that can be collected by the player
+205 moves horizontally right from eh top left corner
+205 this character tries to run away from the player
+213 is enemy who chases you
+213 a bear that chases the player
+213 enemy that follows the player slowly
+213 this object has the ability to follow the player using any movements
+211 moves horizontally and is an enemy
+211 red bat that must be avoided
+211 moves horizontally to the left and right
+211 this character moves from side to side and will kill the player if touched

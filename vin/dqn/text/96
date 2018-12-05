@@ -1,0 +1,78 @@
+201 is a friendly sprite moving horizontally
+202 is a friend moving vertically
+203 chases you but is friendly
+204 moves randomly and is friendly
+205 is a friend fleeing from you
+206 is a friend who cannot move
+207 is a bomber friend shooting upwards
+208 is friendly bomber shooting downwards
+209 is a bomber shooting left
+210 is a bomber shooting right
+211 moves horizontally and is an enemy
+212 is a vertically moving enemy
+213 is enemy who chases you
+214 is enemy moving randomly
+215 is enemy fleeing from you
+216 is stationary enemy
+217 is an enemy bomber shooting upwards
+218 is a bombing enemy shooting downwards
+219 is enemy bomber shooting left
+220 is an enemy shooting right
+201 black bat that moves to the right
+206 stays still and can be collected
+212 brown scorpion that moves up
+217 moves to the left and fires projectiles
+202 red scorpion that moves up and down
+207 blue spider that can be collected by the player
+213 a bear that chases the player
+218 moves left and right and fires projectiles downward
+203 bear that can be collected by the player
+208 archer that fires projectiles downward
+214 has a dagger and must be avoided
+219 archer that fires projectiles to the left
+204 butterfly that must be collected to win
+209 fires projectiles to the left
+215 slowly moves back and forth
+220 bear fires projectiles to the right
+205 black bug that can be collected by the player
+210 quiver that fires projectiles to the right
+211 red bat that must be avoided
+216 a bird that must be avoided
+201 enemy that moves to the right
+206 remains stationary until touched by player and vanishes
+212 enemy that moves to the north
+217 enemy that moves to the left
+202 enemy that moves to the south
+207 enemy that moves to the left that the player can make vanish
+213 enemy that follows the player slowly
+218 enemy that moves to the left
+203 enemy that moves randomly follows the player quickly
+208 enemy that moves left and right horizontally shooting green balls
+214 moves randomly in a confined area
+219 enemy that moves to the right while shooting balls
+204 moves randomally in a confined space
+209 enemy that moves to the right horizontally and shoots balls to the left
+215 moves to the corner and stays there
+220 enemy that moves to the left horizontally and shoots balls to the right
+205 moves horizontally right from eh top left corner
+210 enemy that moves to the right horizontally and shoots balls to the right
+211 moves horizontally to the left and right
+216 stays in the bottom right corner
+201 this character moves slowly from left to right straight across the screen.
+206 this character doesn't move
+212 this character moves slowly from the bottom of the screen to the top
+217 this character slowly moves from right to left while having the ability to shoot upwards
+202 this character slowly moves from the top of the screen to the bottom in a straight line
+207 this character moves somewhat quickly straight across the screen from right to left
+213 this object has the ability to follow the player using any movements
+218 this character can move either left to right or right to left with the ability to shoot downwards
+203 this character can move in any fashion necessary in order to follow the player avatar
+208 this character moves right to left slowly while having the ability to fire downwards
+219 this character moves left to right firing shots to the left
+209 this character slowly moves left to right and has the ability to shoot to the left which can kill the player
+215 this character moves in any way in order to run away from the player
+220 this character moves right to left firing shots back to the right
+205 this character tries to run away from the player
+210 this character moves left to right and right to left with the ability to shoot sidways
+211 this character moves from side to side and will kill the player if touched
+216 this character doesn't move

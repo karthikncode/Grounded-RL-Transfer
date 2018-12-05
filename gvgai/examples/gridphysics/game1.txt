@@ -1,0 +1,76 @@
+
+BasicGame square_size=25
+    SpriteSet
+        wall > Immovable img=oryx/wall3 autotiling=True
+        moving >
+            avatar  > MovingAvatar img=newset/girl4
+            bullet > Missile
+                m1 > orientation=UP    color=BLUE speed=0.2 img=oryx/bullet1
+                m2 > orientation=DOWN  color=RED  speed=0.2 img=oryx/bullet2
+                m3 > orientation=LEFT color=BLUE  speed=0.2 img=oryx/bullet1
+                m4 > orientation=RIGHT  color=RED  speed=0.2 img=oryx/bullet2
+            friend >
+                fa > Missile orientation=RIGHT speed=0.2 color=RED img=oryx/scorpion2 objectID=101
+                fb > Missile orientation=DOWN speed=0.2 color=RED img=oryx/scorpion2 objectID=102
+                fc > Chaser stype=avatar speed=0.2 color=RED img=oryx/scorpion2 objectID=103
+                fd > RandomNPC speed=0.2 img=newset/butterfly1 cons=1 frameRate=5 objectID=104
+                fe > Fleeing stype=avatar color=RED speed=0.2 img=oryx/scorpion2 objectID=105
+                ff > Immovable color=RED img=oryx/scorpion2 objectID=106
+                human1 > Bomber stype=m1 prob=0.1  cooldown=3  color=RED speed=0.2 img=oryx/alien2 objectID=107
+                human2 > Bomber stype=m2 prob=0.1  cooldown=3  color=RED speed=0.2 img=oryx/alien2 objectID=108
+                human3 > Bomber stype=m3 prob=0.1  cooldown=3  color=RED speed=0.2 img=oryx/alien2 objectID=109
+                human4 > Bomber stype=m4 prob=0.1  cooldown=3  color=RED speed=0.2 img=oryx/alien2 objectID=110
+            enemy >
+                ea > Missile orientation=RIGHT speed=0.2 color=BLUE img=oryx/ghost1 objectID=111
+                eb > Missile orientation=DOWN speed=0.2 color=BLUE img=oryx/ghost1 objectID=112
+                ec > Chaser stype=avatar speed=0.2 color=BLUE img=oryx/ghost1 objectID=113
+                ed > RandomNPC speed=0.2 img=newset/ghost1 cons=1 frameRate=5 objectID=114
+                ee > Fleeing stype=avatar speed=0.2 color=BLUE img=oryx/ghost1 objectID=115
+                ef > Immovable color=RED img=oryx/ghost1 objectID=116
+                alien1  > Bomber stype=m1 prob=0.1  cooldown=3 color=BLUE speed=0.2 img=oryx/alien3 objectID=117
+                alien2  > Bomber stype=m2 prob=0.1  cooldown=3 color=BLUE speed=0.2 img=oryx/alien3 objectID=118
+                alien3  > Bomber stype=m3 prob=0.1  cooldown=3 color=BLUE speed=0.2 img=oryx/alien3 objectID=119
+                alien4  > Bomber stype=m4 prob=0.1  cooldown=3 color=BLUE speed=0.2 img=oryx/alien3 objectID=120
+
+
+    LevelMapping
+        a > fa
+        b > fb
+        c > fc
+        d > fd
+        e > fe
+        f > ff
+        g > human1
+        h > human2
+        i > human3
+        j > human4
+        A > ea
+        B > eb
+        C > ec
+        D > ed
+        E > ee
+        F > ef
+        G > alien1
+        H > alien2
+        I > alien3
+        J > alien4
+        w > wall
+        X > avatar
+ 
+
+    InteractionSet
+        friend avatar > killSprite scoreChange=1
+        avatar enemy > killSprite scoreChange=-1
+        avatar bullet > killSprite scoreChange=-1
+
+        bullet EOS  > killSprite
+        enemy wall > reverseDirection
+        enemy wall > stepBack
+        friend wall > reverseDirection
+        friend wall > stepBack
+        avatar wall > stepBack
+
+    TerminationSet
+        Timeout limit=100 win=False
+        SpriteCounter stype=avatar limit=0 win=False
+        SpriteCounter stype=friend limit=0 win=True

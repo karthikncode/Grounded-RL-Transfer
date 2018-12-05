@@ -1,0 +1,1 @@
+scp -r out/ karthikn@rosetta$1.csail.mit.edu:/scratch/karthikn/Grounded-transfer/gvgai/    

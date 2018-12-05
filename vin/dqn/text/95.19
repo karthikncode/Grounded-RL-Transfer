@@ -1,0 +1,16 @@
+108 archer that fires projectiles downward
+108 is friendly bomber shooting downwards
+108 enemy that moves left and right horizontally shooting green balls
+108 this character moves right to left slowly while having the ability to fire downwards
+116 is stationary enemy
+116 a bird that must be avoided
+116 stays in the bottom right corner
+116 this character doesn't move
+113 a bear that chases the player
+113 is enemy who chases you
+113 enemy that follows the player slowly
+113 this object has the ability to follow the player using any movements
+105 is a friend fleeing from you
+105 black bug that can be collected by the player
+105 moves horizontally right from eh top left corner
+105 this character tries to run away from the player

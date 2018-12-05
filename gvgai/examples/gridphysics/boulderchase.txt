@@ -1,0 +1,47 @@
+BasicGame
+	SpriteSet
+		background > Immovable img=oryx/backBlack hidden=True
+		moving >
+            enemy > Chaser stype=avatar speed=0.1
+                crab > color=RED img=oryx/scorpion2 objectID=161
+                butterfly > color=PINK img=oryx/bat2 objectID=162
+            avatar  > ShootAvatar   stype=sword frameRate=8 img=oryx/spelunky objectID=1
+		wall > Immovable autotiling=true img=oryx/dirtWall objectID=163
+		sword > Flicker color=LIGHTGRAY limit=1 singleton=True img=oryx/pickaxe objectID=164
+		dirt > Immovable color=BROWN img=oryx/backLBrown objectID=165
+		exitdoor > Door color=GREEN img=oryx/door2 objectID=166
+		diamond > Resource color=YELLOW limit=10 shrinkfactor=0.75 img=oryx/diamond3 objectID=167
+		boulder > Missile orientation=DOWN color=GRAY speed=0.2 img=oryx/mineral1 objectID=168
+
+
+	LevelMapping
+		. > background dirt
+		e > background exitdoor
+		o > background boulder
+		x > background diamond
+		c > background crab
+		b > background butterfly
+		- > background
+		A > background avatar
+
+	InteractionSet
+		dirt avatar sword > killSprite
+		diamond avatar > collectResource scoreChange=2
+		moving wall boulder > stepBack
+
+		avatar boulder > killIfFromAbove scoreChange=-1
+		avatar butterfly crab > killSprite scoreChange=-1
+
+		enemy boulder > killSprite scoreChange=5
+
+		boulder dirt wall diamond boulder > stepBack
+
+		dirt butterfly > killSprite
+		dirt crab > transformTo stype=diamond
+		crab butterfly > killSprite
+		butterfly crab > transformTo stype=diamond scoreChange=1
+		exitdoor avatar > killIfOtherHasMore resource=diamond limit=3 scoreChange=5
+
+	TerminationSet
+		SpriteCounter stype=avatar limit=0 win=False
+		SpriteCounter stype=exitdoor limit=0 win=True

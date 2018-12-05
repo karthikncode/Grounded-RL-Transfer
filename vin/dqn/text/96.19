@@ -1,0 +1,15 @@
+214 is enemy moving randomly
+214 has a dagger and must be avoided
+214 moves randomly in a confined area
+215 is enemy fleeing from you
+215 slowly moves back and forth
+215 moves to the corner and stays there
+215 this character moves in any way in order to run away from the player
+205 is a friend fleeing from you
+205 black bug that can be collected by the player
+205 moves horizontally right from eh top left corner
+205 this character tries to run away from the player
+207 is a bomber friend shooting upwards
+207 blue spider that can be collected by the player
+207 enemy that moves to the left that the player can make vanish
+207 this character moves somewhat quickly straight across the screen from right to left

@@ -1,0 +1,16 @@
+215 is enemy fleeing from you
+215 slowly moves back and forth
+215 moves to the corner and stays there
+215 this character moves in any way in order to run away from the player
+207 is a bomber friend shooting upwards
+207 blue spider that can be collected by the player
+207 enemy that moves to the left that the player can make vanish
+207 this character moves somewhat quickly straight across the screen from right to left
+218 is a bombing enemy shooting downwards
+218 moves left and right and fires projectiles downward
+218 enemy that moves to the left
+218 this character can move either left to right or right to left with the ability to shoot downwards
+206 is a friend who cannot move
+206 stays still and can be collected
+206 remains stationary until touched by player and vanishes
+206 this character doesn't move

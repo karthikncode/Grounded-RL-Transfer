@@ -1,0 +1,16 @@
+201 is a friendly sprite moving horizontally
+201 black bat that moves to the right
+201 enemy that moves to the right
+201 this character moves slowly from left to right straight across the screen.
+217 is an enemy bomber shooting upwards
+217 moves to the left and fires projectiles
+217 enemy that moves to the left
+217 this character slowly moves from right to left while having the ability to shoot upwards
+219 is enemy bomber shooting left
+219 archer that fires projectiles to the left
+219 enemy that moves to the right while shooting balls
+219 this character moves left to right firing shots to the left
+206 is a friend who cannot move
+206 stays still and can be collected
+206 remains stationary until touched by player and vanishes
+206 this character doesn't move
