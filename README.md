@@ -39,7 +39,7 @@ declare -a models=(
 ```
 Also, declare model names (used for logging results) for the corresponding files like this:
 ```bash
-declare -a modelNames=( textonly_vin_k1 textonly_vin_k2 textonly_vin_k3 textonly_vin_k5)
+declare -a modelNames=( textonly_vin_k1 textonly_vin_k2 textonly_vin_k3 textonly_vin_k5 )
 ```
 
 ### Stopping runs
