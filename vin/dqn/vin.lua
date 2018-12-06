@@ -59,7 +59,6 @@ function create_network(args)
     local seqlstm = nn.SeqLSTM(emb_dim, lstm_out_dim)
     -- local seqlstm = nn.SeqBRNN(emb_dim, lstm_out_dim)  -- use for bidirectional LSTM
     seqlstm.batchfirst = true
-    seqlstm.maskzero = true
 
     -- This is the representation of all the text sentences.
     local X_lstm
