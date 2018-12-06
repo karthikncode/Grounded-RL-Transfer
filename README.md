@@ -2,6 +2,14 @@
 
 This repository contains the code for our paper [Grounding Language for Transfer in Deep Reinforcement Learning](https://arxiv.org/abs/1708.00133), appearing in the Journal of Artificial Intelligence (JAIR).
 
+<p align="center">
+    <img src='fig/state2.pdf' width='700'/>
+</p>
+
+<p align="center">
+    <img src='fig/vin_model.pdf' width='700'/>
+</p>
+
 ### Installation and Setup
 You will first need to install [Torch](http://torch.ch/docs/getting-started.html).   
 
