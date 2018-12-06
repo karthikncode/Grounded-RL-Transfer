@@ -3,11 +3,17 @@
 This repository contains the code for our paper [Grounding Language for Transfer in Deep Reinforcement Learning](https://arxiv.org/abs/1708.00133), appearing in the Journal of Artificial Intelligence (JAIR).
 
 <p align="center">
-    <img src='fig/state2.pdf' width='700'/>
+    <img src='fig/state2.png' width='700'/>
+</p>
+<p align="center">
+    <em> Representation Generator </em>
 </p>
 
 <p align="center">
-    <img src='fig/vin_model.pdf' width='700'/>
+    <img src='fig/vin_model.png' width='700'/>
+</p>
+<p align="center">
+    <em> Value Iteration Network </em>
 </p>
 
 ### Installation and Setup
